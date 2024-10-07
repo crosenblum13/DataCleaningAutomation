@@ -21,14 +21,14 @@ class DataProcessorApp:
 
     def create_widgets(self):
         # Header Label
-        header_label = tk.Label(self.root, text="CRM Data Cleaner", font=("Arial", 16, "bold"))
+        header_label = tk.Label(self.root, text="CRM Data Cleaner", font=("Century Gothic", 16, "bold"))
         header_label.grid(row=0, column=0, columnspan=2, pady=20)
 
         # File selection label and button
-        select_file_label = tk.Label(self.root, text="Select an Excel file to process:", font=("Arial", 12))
+        select_file_label = tk.Label(self.root, text="Select an Excel file to process:", font=("Century Gothic", 12))
         select_file_label.grid(row=1, column=0, sticky="w", padx=20)
 
-        self.file_path_label = tk.Label(self.root, text="No file selected", font=("Arial", 10), fg="gray", wraplength=400)
+        self.file_path_label = tk.Label(self.root, text="No file selected", font=("Century Gothic", 10), fg="gray", wraplength=400)
         self.file_path_label.grid(row=2, column=0, sticky="w", padx=20)
 
         select_button = tk.Button(self.root, text="Select File", width=15, command=self.load_file)
@@ -39,7 +39,7 @@ class DataProcessorApp:
         self.progress.grid(row=3, column=0, columnspan=2, padx=20, pady=20)
 
         # Status label
-        self.status_label = tk.Label(self.root, text="Awaiting action...", font=("Arial", 10), wraplength=400)
+        self.status_label = tk.Label(self.root, text="Awaiting action...", font=("Century Gothic", 10), wraplength=400)
         self.status_label.grid(row=4, column=0, columnspan=2, padx=20)
 
         # Process button
@@ -47,7 +47,7 @@ class DataProcessorApp:
         self.process_button.grid(row=5, column=0, columnspan=2, pady=10)
 
         # Output folder label
-        self.output_folder_label = tk.Label(self.root, text="", font=("Arial", 10), wraplength=450)
+        self.output_folder_label = tk.Label(self.root, text="", font=("Century Gothic", 10), wraplength=450)
         self.output_folder_label.grid(row=6, column=0, columnspan=2, padx=20)
 
     def load_file(self):
@@ -99,7 +99,7 @@ class DataProcessorApp:
         success_window.resizable(False, False)
 
         # Success message label
-        success_label = tk.Label(success_window, text="Document cleaned and saved!", font=("Arial", 12))
+        success_label = tk.Label(success_window, text="Document cleaned and saved!", font=("Century Gothic", 12))
         success_label.pack(pady=20)
 
         # Button to close the application
